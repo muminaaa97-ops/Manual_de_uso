@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manual de Uso · Sistema de Legajos Escuela N°7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<aside class="sidebar">
+  <div class="sidebar-header">
+    <div class="sidebar-school">E.E.S.T N°5 · Berazategui</div>
+    <div class="sidebar-title">Manual de uso<br>Sistema de Legajos</div>
+    <div class="sidebar-subtitle">Escuela Técnica N°5 · Berazategui</div>
+  </div>
+  <nav class="sidebar-nav">
+    <div class="sidebar-section">Primeros pasos</div>
+    <a href="#introduccion">📖 Introducción</a>
+    <a href="#ingreso">🔐 Cómo ingresar</a>
+
+    <div class="sidebar-section">Uso diario</div>
+    <a href="#dashboard">🏠 Pantalla principal</a>
+    <a href="#buscar">🔍 Buscar un alumno</a>
+    <a href="#legajo">👤 Ver el legajo</a>
+    <a href="#editar">✏️ Editar el legajo</a>
+    <a href="#nuevo">➕ Agregar alumno</a>
+
+    <div class="sidebar-section">Administración</div>
+    <a href="#admin">⚙️ Modo Admin</a>
+    <a href="#salir">🚪 Cerrar sesión</a>
+  </nav>
+</aside>
+
+<main class="main">
+
+  <!-- ENCABEZADO -->
+  <div class="manual-header">
+    <div class="manual-header-accent"></div>
+    <div>
+      <h1>Manual de uso · Sistema de Legajos</h1>
+      <p>E.E.S.T N°5 · Berazategui · Guía para preceptores<br>
+        Todo lo que necesitás saber para usar el sistema desde una computadora.</p>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 0 · INTRODUCCIÓN ── -->
+  <div class="seccion" id="introduccion">
+    <div class="seccion-titulo">
+      <span class="seccion-num">0</span>
+      📖 Introducción
+    </div>
+    <p class="seccion-desc">
+      El Sistema de Legajos es una herramienta web donde podés ver y actualizar la información
+      de cada alumno: sus datos personales, familiares, documentación y más,
+      todo guardado de forma segura en la nube.
+    </p>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">¿Qué podés hacer?</div>
+      <div class="indice-grid">
+        <a class="indice-item" href="#ingreso"><span class="indice-num">1</span> Ingresar al sistema</a>
+        <a class="indice-item" href="#dashboard"><span class="indice-num">2</span> Ver la pantalla principal</a>
+        <a class="indice-item" href="#buscar"><span class="indice-num">3</span> Buscar alumnos</a>
+        <a class="indice-item" href="#legajo"><span class="indice-num">4</span> Ver el legajo completo</a>
+        <a class="indice-item" href="#editar"><span class="indice-num">5</span> Editar el legajo</a>
+        <a class="indice-item" href="#nuevo"><span class="indice-num">6</span> Agregar un alumno nuevo</a>
+        <a class="indice-item" href="#admin"><span class="indice-num">7</span> Usar el Modo Admin</a>
+      </div>
+    </div>
+
+    <div class="tip tip-info" style="margin-top:20px">
+      <span class="tip-icon">💡</span>
+      <span>Este manual está pensado para usarse en <strong>computadora</strong>. Recomendamos usar Chrome o Edge.</span>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 1 · CÓMO INGRESAR ── -->
+  <div class="seccion" id="ingreso">
+    <div class="seccion-titulo">
+      <span class="seccion-num">1</span>
+      🔐 Cómo ingresar al sistema
+    </div>
+    <p class="seccion-desc">
+      Para entrar al sistema necesitás el correo y la contraseña que te entregó la institución.
+      Solo los preceptores autorizados pueden ingresar.
+    </p>
+
+    <img src="img sistema/login.png" alt="Pantalla de inicio de sesión" class="img-manual"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="img-placeholder" style="display:none">
+      <span>📷</span><strong>login.png</strong>
+      <span style="font-size:13px">Captura completa de la pantalla de login</span>
+    </div>
+    <p class="img-caption">Pantalla de inicio de sesión</p>
+
+    <div class="pasos">
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Abrí el navegador (Chrome o Edge) y entrá a la dirección del sistema.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">En el campo <strong>Correo electrónico</strong> escribí tu dirección de correo.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">En <strong>Contraseña</strong> escribí tu contraseña. Los puntos ocultan lo que escribís, es normal.</div></div>
+      <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hacé clic en el botón <strong>INGRESAR</strong> o presioná <strong>Enter</strong>.</div></div>
+      <div class="paso"><div class="paso-num">5</div><div class="paso-texto">El sistema te lleva automáticamente a la lista de alumnos.</div></div>
+    </div>
+
+    <div class="tip tip-warning" style="margin-top:16px">
+      <span class="tip-icon">⚠️</span>
+      <span>Si aparece un mensaje de error, revisá que no tengas el <strong>Bloq Mayús</strong> activado y que el correo esté bien escrito.</span>
+    </div>
+    <div class="tip tip-ok">
+      <span class="tip-icon">✅</span>
+      <span>La próxima vez que abras el sistema en la misma computadora <strong>no vas a necesitar volver a ingresar</strong>. Tu sesión se guarda automáticamente.</span>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 2 · PANTALLA PRINCIPAL ── -->
+  <div class="seccion" id="dashboard">
+    <div class="seccion-titulo">
+      <span class="seccion-num">2</span>
+      🏠 Pantalla principal
+    </div>
+    <p class="seccion-desc">
+      Cuando ingresás al sistema, lo primero que ves es la pantalla principal con el listado de todos los alumnos
+      y tres tarjetas con información rápida.
+    </p>
+
+    <img src="img sistema/dashboard.png" alt="Pantalla principal" class="img-manual"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="img-placeholder" style="display:none">
+      <span>📷</span><strong>dashboard.png</strong>
+      <span style="font-size:13px">Captura completa del dashboard con alumnos cargados</span>
+    </div>
+    <p class="img-caption">Pantalla principal — tarjetas de resumen y listado de alumnos</p>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">Las 3 tarjetas de resumen</div>
+      <table class="ref-table">
+        <thead><tr><th>Tarjeta</th><th>Qué muestra</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Alumnos</strong></td><td>Total de alumnos cargados en el sistema</td></tr>
+          <tr><td><strong>Docs completos</strong></td><td>Cuántos alumnos tienen toda la documentación entregada</td></tr>
+          <tr><td><strong>Docs incompletos</strong></td><td>Cuántos alumnos todavía deben algún documento</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 3 · BUSCAR ALUMNO ── -->
+  <div class="seccion" id="buscar">
+    <div class="seccion-titulo">
+      <span class="seccion-num">3</span>
+      🔍 Buscar un alumno
+    </div>
+    <p class="seccion-desc">
+      Podés encontrar a cualquier alumno escribiendo su nombre, apellido o DNI en el buscador.
+      También podés filtrar por año o división.
+    </p>
+
+    <img src="img sistema/buscador.png" alt="Buscador con resultados" class="img-manual"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="img-placeholder" style="display:none">
+      <span>📷</span><strong>buscador.png</strong>
+      <span style="font-size:13px">Buscador con texto escrito y tabla filtrada</span>
+    </div>
+    <p class="img-caption">Buscador activo — la lista se filtra automáticamente mientras escribís</p>
+
+    <div class="pasos">
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">En el buscador escribí el <strong>nombre, apellido o DNI</strong> del alumno.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">La lista se actualiza sola mientras escribís. No hace falta presionar Enter.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Para filtrar por año o división usá los desplegables que están al lado del buscador.</div></div>
+      <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Hacé clic en el botón <strong>👁 Ver</strong> del alumno para abrir su legajo.</div></div>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">Los badges de documentación</div>
+      <img src="img sistema/badges-docs.png" alt="Badges de documentación" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>badges-docs.png</strong>
+        <span style="font-size:13px">Zoom a la columna Documentación con ambos badges visibles</span>
+      </div>
+      <p class="img-caption">Verde = todo entregado · Rojo = falta algo</p>
+      <table class="ref-table" style="margin-top:12px">
+        <thead><tr><th>Badge</th><th>Significa</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-verde">✓ Completo</span></td><td>El alumno entregó todos los documentos requeridos</td></tr>
+          <tr><td><span class="badge badge-rojo">✗ Incompleto</span></td><td>Falta al menos un documento por entregar</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 4 · VER EL LEGAJO ── -->
+  <div class="seccion" id="legajo">
+    <div class="seccion-titulo">
+      <span class="seccion-num">4</span>
+      👤 Ver el legajo de un alumno
+    </div>
+    <p class="seccion-desc">
+      Al hacer clic en <strong>Ver</strong> se abre el legajo completo del alumno con todas sus secciones.
+    </p>
+
+    <img src="img sistema/legajo-header.png" alt="Encabezado del legajo" class="img-manual"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="img-placeholder" style="display:none">
+      <span>📷</span><strong>legajo-header.png</strong>
+      <span style="font-size:13px">Solo el encabezado del legajo: nombre, año y badge</span>
+    </div>
+    <p class="img-caption">Encabezado del legajo — nombre, año/división y estado de documentación</p>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">Secciones del legajo</div>
+      <table class="ref-table">
+        <thead><tr><th>Sección</th><th>Qué contiene</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Datos personales</strong></td><td>Nombre, DNI, fecha de nacimiento, año. Solo lectura.</td></tr>
+          <tr><td><strong>Datos de contacto y familia</strong></td><td>Hasta 3 familiares: nombre, vínculo, teléfono y correo. Dirección del alumno.</td></tr>
+          <tr><td><strong>Número de legajo</strong></td><td>El número de legajo asignado por la institución.</td></tr>
+          <tr><td><strong>Foto del alumno</strong></td><td>Foto de perfil.</td></tr>
+          <tr><td><strong>Documentación</strong></td><td>Los 6 documentos obligatorios más reinscripción y escuela anterior.</td></tr>
+          <tr><td><strong>Mayoría de edad</strong></td><td>Solo para alumnos de 7°. Indica si es mayor y si puede retirarse solo.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">Cómo se ven los datos en modo vista</div>
+      <img src="img sistema/legajo-vista.png" alt="Legajo en modo vista" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>legajo-vista.png</strong>
+        <span style="font-size:13px">Sección "Datos de contacto" con datos cargados, sin editar</span>
+      </div>
+      <p class="img-caption">Modo vista — los datos se muestran como texto simple</p>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">Botones para navegar más fácil</div>
+      <img src="img sistema/botones-flotantes.png" alt="Botones flotantes" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>botones-flotantes.png</strong>
+        <span style="font-size:13px">Legajo scrolleado con los botones flotantes visibles en la esquina</span>
+      </div>
+      <p class="img-caption">Botones flotantes — aparecen cuando bajás en el legajo</p>
+      <table class="ref-table" style="margin-top:12px">
+        <thead><tr><th>Botón</th><th>Qué hace</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-azul">← Volver</span></td><td>Vuelve a la lista de alumnos</td></tr>
+          <tr><td><span class="badge badge-gris">↑ Arriba</span></td><td>Sube al inicio del legajo</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">El aviso de sección incompleta</div>
+      <img src="img sistema/badge-incompleto.png" alt="Badge incompleto" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>badge-incompleto.png</strong>
+        <span style="font-size:13px">Zoom al título de una sección con el badge rojo Incompleto al lado</span>
+      </div>
+      <p class="img-caption">El badge <span class="badge badge-rojo">Incompleto</span> aparece en el título cuando faltan datos</p>
+      <div class="tip tip-info" style="margin-top:12px">
+        <span class="tip-icon">💡</span>
+        <span>Desaparece automáticamente cuando completás y guardás los datos de esa sección.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 5 · EDITAR EL LEGAJO ── -->
+  <div class="seccion" id="editar">
+    <div class="seccion-titulo">
+      <span class="seccion-num">5</span>
+      ✏️ Editar el legajo
+    </div>
+    <p class="seccion-desc">
+      El legajo tiene dos partes editables: los <strong>datos de contacto y familia</strong>
+      y la <strong>documentación</strong>. Para editar cualquiera de las dos, hacé clic en el botón
+      <strong>Editar</strong> al pie del legajo.
+    </p>
+
+    <div class="pasos">
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Abrí el legajo del alumno y bajá hasta el final. Hacé clic en el botón <strong>Editar</strong>.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Todos los campos del legajo se vuelven editables al mismo tiempo.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Cuando termines hacé clic en <strong>Guardar cambios</strong>. Los datos quedan guardados en la nube automáticamente.</div></div>
+      <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Si te equivocaste hacé clic en <strong>Cancelar</strong> y los datos vuelven a como estaban.</div></div>
+    </div>
+
+    <div class="tip tip-warning">
+      <span class="tip-icon">⚠️</span>
+      <span>Los <strong>datos personales</strong> (nombre, DNI, fecha de nacimiento, año) solo se pueden cambiar desde el <strong>Modo Admin</strong>. En el legajo aparecen bloqueados.</span>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">Datos de contacto y familia</div>
+      <img src="img sistema/legajo-edicion.png" alt="Edición datos de familia" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>legajo-edicion.png</strong>
+        <span style="font-size:13px">Sección de datos de contacto y familia en modo edición</span>
+      </div>
+      <p class="img-caption">Datos de contacto — campos de familiares, dirección y observaciones editables</p>
+      <p style="font-size:15px;color:#3f3f46;line-height:1.7;margin-top:10px">
+        Podés cargar hasta <strong>3 familiares</strong> con nombre, vínculo (madre, padre, tutor, etc.),
+        teléfono y correo. También la dirección del alumno y observaciones generales.
+      </p>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">📂 Documentación</div>
+      <img src="img sistema/documentacion.png" alt="Sección documentación" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>documentacion.png</strong>
+        <span style="font-size:13px">Sección Documentación con badges Entregado y Pendiente visibles</span>
+      </div>
+      <p class="img-caption">Documentación — barra de progreso y estado de cada uno de los 6 documentos</p>
+
+      <table class="ref-table" style="margin-top:14px">
+        <thead><tr><th>Documento</th></tr></thead>
+        <tbody>
+          <tr><td>Planilla de reinscripción</td></tr>
+          <tr><td>Partida de nacimiento</td></tr>
+          <tr><td>Acta de nacimiento</td></tr>
+          <tr><td>Certificado de primaria completa</td></tr>
+          <tr><td>Documento del padre / madre / tutor</td></tr>
+          <tr><td>Vacunas completas</td></tr>
+        </tbody>
+      </table>
+
+      <div class="pasos" style="margin-top:16px">
+        <div class="paso"><div class="paso-num">1</div><div class="paso-texto">En modo edición, cada documento tiene un interruptor. Activalo para marcarlo como <strong>Entregado</strong>.</div></div>
+        <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Opcionalmente podés adjuntar el archivo escaneado tocando <strong>📂 Subir archivo</strong>. Acepta imágenes y PDF.</div></div>
+        <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Hacé clic en <strong>Guardar cambios</strong> para registrar todo.</div></div>
+      </div>
+
+      <div class="tip tip-info" style="margin-top:12px">
+        <span class="tip-icon">💡</span>
+        <span>La barra de progreso muestra cuántos documentos de 6 fueron entregados. Se actualiza sola al guardar.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 6 · AGREGAR ALUMNO ── -->
+  <div class="seccion" id="nuevo">
+    <div class="seccion-titulo">
+      <span class="seccion-num">6</span>
+      ➕ Agregar un alumno nuevo
+    </div>
+    <p class="seccion-desc">
+      Cuando ingresa un alumno nuevo a la escuela, lo cargás desde la pantalla principal.
+    </p>
+
+    <img src="img sistema/modal-nuevo.png" alt="Modal nuevo alumno" class="img-manual"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="img-placeholder" style="display:none">
+      <span>📷</span><strong>modal-nuevo.png</strong>
+      <span style="font-size:13px">El modal "Nuevo alumno" abierto con todos sus campos</span>
+    </div>
+    <p class="img-caption">Formulario para agregar un alumno nuevo</p>
+
+    <div class="pasos">
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">En la pantalla principal hacé clic en el botón <strong>+ Nuevo alumno</strong> (arriba a la derecha de la tabla).</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Completá los campos: <strong>Apellido</strong>, <strong>Nombre</strong>, <strong>DNI</strong>, <strong>Fecha de nacimiento</strong>, <strong>Año</strong> y <strong>División</strong>.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">Hacé clic en <strong>Guardar</strong>. El alumno aparece en la lista con documentación incompleta.</div></div>
+      <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Después podés abrir su legajo para completar el resto de los datos.</div></div>
+    </div>
+
+    <div class="tip tip-warning">
+      <span class="tip-icon">⚠️</span>
+      <span>Verificá bien el <strong>DNI</strong> antes de guardar. Es el dato principal para identificar al alumno.</span>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 7 · MODO ADMIN ── -->
+  <div class="seccion" id="admin">
+    <div class="seccion-titulo">
+      <span class="seccion-num">7</span>
+      ⚙️ Modo Admin
+    </div>
+    <p class="seccion-desc">
+      El Modo Admin desbloquea funciones adicionales: editar los datos fijos de un alumno (nombre, DNI, año)
+      y eliminar alumnos del sistema. Requiere contraseña.
+    </p>
+
+    <img src="img sistema/modal-admin.png" alt="Modal contraseña admin" class="img-manual"
+         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="img-placeholder" style="display:none">
+      <span>📷</span><strong>modal-admin.png</strong>
+      <span style="font-size:13px">El modal de contraseña para activar el Modo Admin</span>
+    </div>
+    <p class="img-caption">Modal de contraseña — se abre al hacer clic en "Modo Admin"</p>
+
+    <div class="pasos">
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">En la pantalla principal hacé clic en el botón <strong>Modo Admin</strong> (arriba a la derecha).</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">Se abre una ventana pidiendo la contraseña. Ingresala y hacé clic en <strong>Confirmar</strong> o presioná <strong>Enter</strong>.</div></div>
+      <div class="paso"><div class="paso-num">3</div><div class="paso-texto">El botón cambia a <strong>✕ Salir de Admin</strong>. Ahora en cada alumno aparecen los botones <strong>Datos</strong> y <strong>Eliminar</strong>.</div></div>
+      <div class="paso"><div class="paso-num">4</div><div class="paso-texto">Para salir del Modo Admin hacé clic en <strong>✕ Salir de Admin</strong>.</div></div>
+    </div>
+
+    <div class="subseccion">
+      <div class="subseccion-titulo">La tabla con Modo Admin activo</div>
+      <img src="img sistema/admin-tabla.png" alt="Tabla con modo admin activo" class="img-manual"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="img-placeholder" style="display:none">
+        <span>📷</span><strong>admin-tabla.png</strong>
+        <span style="font-size:13px">La tabla con los 4 botones de acción visibles en modo admin</span>
+      </div>
+      <p class="img-caption">Con Modo Admin activo aparecen los botones extra en cada fila</p>
+      <table class="ref-table" style="margin-top:12px">
+        <thead><tr><th>Botón</th><th>Qué hace</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge badge-azul">👁 Ver</span></td><td>Abre el legajo completo del alumno</td></tr>
+          <tr><td><span class="badge badge-gris">✎ Editar</span></td><td>Va directo a la sección de documentación del legajo</td></tr>
+          <tr><td><span class="badge badge-gris">⚙ Datos</span></td><td>Abre un formulario para editar nombre, DNI, año y división</td></tr>
+          <tr><td><span class="badge badge-rojo">🗑 Eliminar</span></td><td>Elimina el alumno del sistema (pide confirmación)</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="tip tip-danger">
+      <span class="tip-icon">❗</span>
+      <span>Eliminar un alumno es <strong>permanente</strong>. Una vez eliminado no se puede recuperar. Confirmá bien antes de hacerlo.</span>
+    </div>
+  </div>
+
+  <!-- ── SECCIÓN 8 · CERRAR SESIÓN ── -->
+  <div class="seccion" id="salir">
+    <div class="seccion-titulo">
+      <span class="seccion-num">8</span>
+      🚪 Cerrar sesión
+    </div>
+    <p class="seccion-desc">
+      Cuando terminás de trabajar podés cerrar sesión. Es importante hacerlo si usás una computadora compartida.
+    </p>
+
+    <div class="pasos">
+      <div class="paso"><div class="paso-num">1</div><div class="paso-texto">Hacé clic en el botón <strong>Cerrar sesión</strong> que está arriba a la derecha en cualquier pantalla.</div></div>
+      <div class="paso"><div class="paso-num">2</div><div class="paso-texto">El sistema te desconecta y te lleva de vuelta a la pantalla de login.</div></div>
+    </div>
+
+    <div class="tip tip-ok" style="margin-top:12px">
+      <span class="tip-icon">✅</span>
+      <span>Si usás tu propia computadora no hace falta cerrar sesión cada vez. El sistema te recuerda automáticamente la próxima vez.</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <strong>Sistema de Legajos · E.E.S.T N°5 · Berazategui</strong><br>
+    Manual de uso para preceptores
+  </div>
+
+</main>
+
+<a href="#" class="btn-top" title="Volver arriba">↑</a>
+
+<script>
+  const secciones = document.querySelectorAll('.seccion');
+  const links = document.querySelectorAll('.sidebar-nav a');
+  window.addEventListener('scroll', () => {
+    let actual = '';
+    secciones.forEach(s => {
+      if (window.scrollY >= s.offsetTop - 60) actual = s.id;
+    });
+    links.forEach(l => {
+      l.classList.toggle('active', l.getAttribute('href') === '#' + actual);
+    });
+  });
+</script>
+</body>
+</html>
